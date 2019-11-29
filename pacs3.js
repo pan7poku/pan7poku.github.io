@@ -1,0 +1,1 @@
+jQuery(function(a){a(".tabw").click(function(){a(".is-active").removeClass("is-active");a(this).addClass("is-active");a(".is-show").removeClass("is-show");const b=a(this).index();a(".twnel").eq(b).addClass("is-show")})});

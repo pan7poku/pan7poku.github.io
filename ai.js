@@ -44,3 +44,4 @@ fetchAllPages(); };
       ga.append('<div class="message bot"><span><p class="sentanko88">📝Get Freax 検索ワード一覧URL<br/><a href="https://www.net-frx.com/search?q='+gonzu+'&max-results=20" target="_blank" rel="noopener noreferrer" class="aftehurr345">https://www.net-frx.com/search?q='+gonzu+'</a></p>'+jaa+'</span></div>');
  gg1();}});
  $(document).on('click', '#moreBtn', function(){ $(this).hide();gg1(); });
+      $(document).on('click', '#closeChatBtn, .sabu777, .sabu777ob', function(e){ const id = e.target.id; if (id !== "chatBox" && id !== "chatInput" && id !== "inputContainer" && id !== "sendBtn") {  const zazmm7 = $('#chatPopup,.sabu777, .sabu777ob, #inputField'); zazmm7.fadeOut(50);   $('body').removeClass('sccansell'); $(".menu-dbb1, #ad-bottom-f1ads, #ad-bottom-pc0").fadeIn(200);  } });  

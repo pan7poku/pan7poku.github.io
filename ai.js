@@ -1,4 +1,4 @@
-      let nextLink="";let nb2="";let gonzu="";let gonzu2="";let ga=$('#chatBox');   let ga98=$('.gazoulod'); var remo= function(){$('.gazoulod').remove();}
+  let nextLink="";let nb2="";let gonzu="";let gonzu2="";let ga=$('#chatBox');   let ga98=$('.gazoulod'); var remo= function(){$('.gazoulod').remove();}
                  const openBtn=document.getElementById("openChatBtn");const chatPopup=document.getElementById("chatPopup");const closeBtn=document.getElementById("closeChatBtn");const chatBox=document.getElementById("chatBox");const inputField=document.getElementById("chatInput");let isSending = false; const button = document.getElementById("sendBtn");
 inputField.addEventListener("keydown", function(e) {  if (e.key === "Enter" && !isSending) {    isSending = true;      button.click();
     setTimeout(() => {      isSending = false;    }, 1000);  }});             
@@ -41,8 +41,7 @@ fetchAllPages(); };
 gonzu=gonzu.replace(/ /g, nu0).replace(/　/g, nu0).replace(/日本/g, "国内");     
       if (mi.includes("海外") && mi.includes("tv")) {jaa='<br/>💡 海外TVドラマライナップ一覧は以下のページでも確認できますよ👍<br/><p class="sentanko88"><a href="https://www.net-frx.com/p/netflix-drama-line-up.html" target="_blank" rel="noopener noreferrer" class="aftehurr345">https://www.net-frx.com/p/netflix-drama-line-up.html</a></p>'}else 
        if (mi.includes("高い評価")) {jaa='<br/>💡 高い評価の全作品は以下のページでも確認できますよ👍<br/><p class="sentanko88"><a href="https://www.net-frx.com/p/netflix-highly-rated.html" target="_blank" rel="noopener noreferrer" class="aftehurr345">https://www.net-frx.com/p/netflix-highly-rated.html</a></p>'}else 
-       if (mi.includes("アニメ")) {jaa='<br/>💡 アニメ検索のヒント:アニメ映画は「<i class="jpacheck790">アニメ映画</i>」、アニメ・シリーズは「<i class="jpacheck790">アニメ シリーズ</i>」で検索できますよ👍'}else   if (mi.includes("ありがとう")) {jaa='<br/>もし、「お礼」の意味での「ありがとう」でしたら、どういたしまして！😊✨<br/>
-これからもよろしくお願いします🙇'}
+       if (mi.includes("アニメ")) {jaa='<br/>💡 アニメ検索のヒント:アニメ映画は「<i class="jpacheck790">アニメ映画</i>」、アニメ・シリーズは「<i class="jpacheck790">アニメ シリーズ</i>」で検索できますよ👍'}else   if (mi.includes("ありがとう")) {jaa='<br/>もし、「お礼」の意味での「ありがとう」でしたら、どういたしまして！😊✨<br/>これからもよろしくお願いします🙇'}
       ga.append('<div class="message bot"><span><p class="sentanko88">📝Get Freax 検索ワード一覧URL<br/><a href="https://www.net-frx.com/search?q='+gonzu+'&max-results=20" target="_blank" rel="noopener noreferrer" class="aftehurr345">https://www.net-frx.com/search?q='+gonzu+'</a></p>'+jaa+'</span></div>');
  gg1();} setTimeout(function() {remo(); }, 1800);　chatBox.scrollTop = chatBox.scrollHeight;  });
  $(document).on('click', '#moreBtn', function(){ $(this).hide();gg1(); });

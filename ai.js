@@ -46,4 +46,4 @@ gonzu=gonzu.replace(/ /g, nu0).replace(/　/g, nu0).replace(/日本/g, "国内")
  gg1();} setTimeout(function() {remo(); }, 1800);　chatBox.scrollTop = chatBox.scrollHeight + 50;  });
  $(document).on('click', '#moreBtn', function(){ $(this).hide();gg1(); });
       $(document).on('click', '.jpacheck790', function(){ const nb=$(this).text();$("#chatInput").val(nb); });  
- $(document).on('click', '#closeChatBtn, .sabu777, .sabu777ob', function(e){ const id = e.target.id; if (id !== "chatBox" && id !== "chatInput" && id !== "inputContainer" && id !== "sendBtn") {  const zazmm7 = $('#chatPopup,.sabu777, .sabu777ob, #inputField'); zazmm7.fadeOut(50);   $('body').removeClass('sccansell'); $(".menu-dbb1, #ad-bottom-f1ads, #ad-bottom-pc0").fadeIn(200);  } }); 
+ $(document).on('click', '#closeChatBtn, .sabu777, .sabu777ob', function(e){ const id = e.target.id; if (id !== "chatBox" && id !== "chatInput" && id !== "inputContainer" && id !== "sendBtn") {  const zazmm7 = $('#chatPopup,.sabu777, .sabu777ob, #inputField'); zazmm7.fadeOut(50);   $('body').removeClass('sccansell'); $(".menu-dbb1, #ad-bottom-f1ads, #ad-bottom-pc0, #ads-down-ty").fadeIn(200);  } }); 

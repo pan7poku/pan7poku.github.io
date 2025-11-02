@@ -27,7 +27,7 @@ fetchAllPages();  };
           showResults(collected);  },      error: function(xhr){  remo(); ga.append('<div class="message bot"><span>エラーです🤔<br/>検索ワードを変えて試してみて下さい。</span></div>');      }    });  }
   function showResults(data){const count = data.length;const dao=data.length;if(dao==0){ remo(); ga.append('<div class="message bot"><span>0件です🤔<br/>検索ワードを変えて試してみて下さい👏</span></div>'); }else{    const html = data.map(p =>
       `<a href="${p.link}" target="_blank" class="aftehurr aftehurr55">${p.title}</a><p class="tenbebe">${p.text77}</p>`
-    ).join('');                if(nb2 > 5){ gg2();}  remo();   ga.append('<div class="message bot"><span>'+html+'</span></div>');} }
+    ).join('');                if(nb2 > 5){ gg2();}  remo(); $("#chatInput").val('');  ga.append('<div class="message bot"><span>'+html+'</span></div>');} }
 fetchAllPages(); };
 
    let nu0="";const nu1="%20";const nu2="%20OR%20";nu0=nu1;

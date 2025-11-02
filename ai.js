@@ -2,7 +2,7 @@
                  const openBtn=document.getElementById("openChatBtn");const chatPopup=document.getElementById("chatPopup");const closeBtn=document.getElementById("closeChatBtn");const chatBox=document.getElementById("chatBox");const inputField=document.getElementById("chatInput");let isSending = false; const button = document.getElementById("sendBtn");
 inputField.addEventListener("keydown", function(e) {  if (e.key === "Enter" && !isSending) {    isSending = true;      button.click();
     setTimeout(() => {      isSending = false;    }, 1000);  }});             
- var gg2= function(){  function fetchAllPages(keyword, pageUrl, collected, maxPages){  pageUrl =nextLink;    collected = collected || [];
+ var gg2= function(){  function fetchAllPages2(keyword, pageUrl, collected, maxPages){  pageUrl =nextLink;    collected = collected || [];
     maxPages = maxPages || 5;
  $.ajax({      url: pageUrl,      type: 'GET',      dataType: 'html',      success: function(html){        const doc = $('<div>').html(html);
  doc.find('#list .list-item').each(function(){          collected.push({            title: $(this).find(".list-item-titlezz a").text(),            link: $(this).find(".x-top-post78").attr('href'),            text77: $(this).find(".bla-top-a2").text()            });  });
@@ -14,7 +14,7 @@ inputField.addEventListener("keydown", function(e) {  if (e.key === "Enter" && !
     ).join(''); ga.append(`<div class="message bot"><span>`+html+`</span></div><div class="message bot"><button id="moreBtn">もっと取得する</button></div>`);}    else{   const html = data.map(p =>
       `<div class="link-all-ct"><a href="${p.link}" target="_blank" class="aftehurr aftehurr55">${p.title}</a><p class="tenbebe">${p.text77}</p></div>`
     ).join(''); remo();  ga.append('<div class="message bot"><span>'+html+'</span></div>');} }
-fetchAllPages();  };
+fetchAllPages2();  };
                  
  var gg1= function(){const papa=nextLink.length;
   function fetchAllPages(keyword, pageUrl, collected, maxPages){   if(papa > 5){  pageUrl = nextLink;}else{pageUrl = 'https://www.net-frx.com/search?q='+gonzu;}

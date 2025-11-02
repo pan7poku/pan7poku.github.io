@@ -11,7 +11,7 @@ inputField.addEventListener("keydown", function(e) {  if (e.key === "Enter" && !
   function showResults(data){const count = data.length;
  if(nb2 > 5){ const html =  data.map(p =>
       `<div class="link-all-ct"><a href="${p.link}" target="_blank" class="aftehurr aftehurr55">${p.title}</a><p class="tenbebe">${p.text77}</p></div>`
-    ).join(''); ga.append(`<div class="message bot"><span>`+html+`</span></div><div class="message bot"><button id="moreBtn">もっと取得する</button></div>`);}    else{   const html = `${count} 件 ${nextLink}` + data.map(p =>
+    ).join(''); ga.append(`<div class="message bot"><span>`+html+`</span></div><div class="message bot"><button id="moreBtn">もっと取得する</button></div>`);}    else{   const html = data.map(p =>
       `<div class="link-all-ct"><a href="${p.link}" target="_blank" class="aftehurr aftehurr55">${p.title}</a><p class="tenbebe">${p.text77}</p></div>`
     ).join(''); remo();  ga.append('<div class="message bot"><span>'+html+'</span></div>');} }
 fetchAllPages();  };

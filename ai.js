@@ -40,7 +40,7 @@ fetchAllPages(); };
 //  ga.append('<div class="message bot"><span>⏳ 作品を検索中です...</span></div>'); 
 gonzu=gonzu.replace(/ /g, nu0).replace(/　/g, nu0).replace(/日本/g, "国内");     
       if (mi.includes("海外") && mi.includes("tv")) {jaa='<br/>💡 海外TVドラマライナップ一覧は以下のページでもご確認できます。<br/><p class="sentanko88"><a href="https://www.net-frx.com/p/netflix-drama-line-up.html" target="_blank" rel="noopener noreferrer" class="aftehurr345">https://www.net-frx.com/p/netflix-drama-line-up.html</a></p>'}
-       if (mi.includes("アニメ")) {jaa='<br/>💡 アニメ検索のヒント:アニメ映画は「<i class="jpacheck790">アニメ映画</i>」、アニメ・シリーズは「<i class="jpacheck790">アニメ シリーズ</i>」で検索できます👍<br/><p class="sentanko88"><a href="https://www.net-frx.com/p/netflix-drama-line-up.html" target="_blank" rel="noopener noreferrer" class="aftehurr345">https://www.net-frx.com/p/netflix-drama-line-up.html</a></p>'}
+       if (mi.includes("アニメ")) {jaa='<br/>💡 アニメ検索のヒント:アニメ映画は「<i class="jpacheck790">アニメ映画</i>」、アニメ・シリーズは「<i class="jpacheck790">アニメ シリーズ</i>」で検索できます👍'}
       ga.append('<div class="message bot"><span><p class="sentanko88">📝Get Freax 検索ワード一覧URL<br/><a href="https://www.net-frx.com/search?q='+gonzu+'&max-results=20" target="_blank" rel="noopener noreferrer" class="aftehurr345">https://www.net-frx.com/search?q='+gonzu+'</a></p>'+jaa+'</span></div>');
  gg1();} setTimeout(function() {remo(); }, 1800);　chatBox.scrollTop = chatBox.scrollHeight + 50;  });
  $(document).on('click', '#moreBtn', function(){ $(this).hide();gg1(); });

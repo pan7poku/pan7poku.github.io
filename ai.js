@@ -27,7 +27,7 @@ fetchAllPages();  };
           showResults(collected);  },      error: function(xhr){  remo(); ga.append('<div class="message bot"><span>エラーです🤔<br/>検索ワードを変えて試してみて下さい。</span></div>');      }    });  }
   function showResults(data){const count = data.length;const dao=data.length;if(dao==0){ remo(); ga.append('<div class="message bot"><span>0件です🤔<br/>検索ワードを変えて試してみて下さい👏</span></div>'); }else{    const html = data.map(p =>
       `<a href="${p.link}" target="_blank" class="aftehurr aftehurr55">${p.title}</a><p class="tenbebe">${p.text77}</p>`
-    ).join('');                if(nb2 > 5){ gg2();}  remo(); $("#chatInput").val('');  ga.append('<div class="message bot"><span>'+html+'</span></div>');} }
+    ).join('');                if(nb2 > 5){ gg2();}  remo();   ga.append('<div class="message bot"><span>'+html+'</span></div>');} }
 fetchAllPages(); };
 
    let nu0="";const nu1="%20";const nu2="%20OR%20";nu0=nu1;
@@ -43,7 +43,7 @@ gonzu=gonzu.replace(/ /g, nu0).replace(/　/g, nu0).replace(/日本/g, "国内")
        if (mi.includes("高い評価")) {jaa='<br/>💡 高い評価の全作品は以下のページでも確認できますよ👍<br/><p class="sentanko88"><a href="https://www.net-frx.com/p/netflix-highly-rated.html" target="_blank" rel="noopener noreferrer" class="aftehurr345">https://www.net-frx.com/p/netflix-highly-rated.html</a></p>'}else 
        if (mi.includes("アニメ")) {jaa='<br/>💡 アニメ検索のヒント:アニメ映画は「<i class="jpacheck790">アニメ映画</i>」、アニメ・シリーズは「<i class="jpacheck790">アニメ シリーズ</i>」で検索できますよ👍'}else   if (mi.includes("ありがとう")) {jaa='<br/>もし、「お礼」の意味での「ありがとう」でしたら、どういたしまして！😊✨<br/>これからもよろしくお願いします🙇'}
       ga.append('<div class="message bot"><span><p class="sentanko88">📝Get Freax 検索ワード一覧URL<br/><a href="https://www.net-frx.com/search?q='+gonzu+'&max-results=20" target="_blank" rel="noopener noreferrer" class="aftehurr345">https://www.net-frx.com/search?q='+gonzu+'</a></p>'+jaa+'</span></div>');
- gg1();} setTimeout(function() {remo(); }, 1800);　chatBox.scrollTop = chatBox.scrollHeight;  });
+ gg1();} setTimeout(function() {remo(); }, 1800);　$("#chatInput").val(''); chatBox.scrollTop = chatBox.scrollHeight;  });
  $(document).on('click', '#moreBtn', function(){ $(this).hide();gg1(); });
       $(document).on('click', '.jpacheck790', function(){ const nb=$(this).text();$("#chatInput").val(nb); });  
  $(document).on('click', '#closeChatBtn, .sabu777, .sabu777ob', function(e){ const id = e.target.id; if (id !== "chatBox" && id !== "chatInput" && id !== "inputContainer" && id !== "sendBtn") {  const zazmm7 = $('#chatPopup,.sabu777, .sabu777ob, #inputField'); zazmm7.fadeOut(50);   $('body').removeClass('sccansell'); $(".menu-dbb1, #ad-bottom-f1ads, #ad-bottom-pc0, #ads-down-ty").fadeIn(200);  } }); 

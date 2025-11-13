@@ -28,14 +28,14 @@ $.ajax(settings)
   .then(function (response) {
    const op=response.reviews;  const re7=JSON.stringify(response.reviews.length);
   
-    if(re7==0){ }else{       
+    if(re7==0){  ppp.append(errosm);pp2.hide();     }else{       
   let fetchPromises = []; let popo53 = "";  let pop7gg = "";  
 for (let i = 0; i < re7; i++) {const tp=JSON.stringify(op[i].spoiler);
-  let u1 = "", u3 = "", u7 = "", u10 = "", u11 = "", u5 = "", u6 = "";let gg="";
+  let u1 = "", u3 = "", u7 = "", u10 = "", u11 = "", u5 = "", u6 = "";
   if (tp.indexOf("true") >= 0) continue; 
  u5=op[i].author.displayName;u1=op[i].authorRating;u3=op[i].reviewTitle;u7=op[i].reviewText;
                                
-                               
+                               const gg=flem5+"/reviews";
  const bab0=u3.replace(/\?/g, ".").replace(/!/g, '.').replace(/[. ]/g, " ").replace(/\r?\n|\r/g, " ").replace(/\s+/g, " ").trim();
  const bab1=u7.replace(/\?/g, ".").replace(/!/g, '.').replace(/[. ]/g, " ").replace(/\r?\n|\r/g, " ").replace(/\s+/g, " ").trim();
  const url1zz =
@@ -140,6 +140,7 @@ $(document).on('click', '.imdbbox3, .review-itt02', function(e){   if (!$(e.targ
         tomatozz();        }); 
   $(function(){    $(document).on('click', '.delreeev, .sabu777ZZ, .sabu777obZZ, .revhatpp, .revhatppTT', function(e){    if (!$(e.target).closest('.revhatpp-body').length) {const zazmm7 = $('.delreeev, .sabu777ZZ, .sabu777obZZ, .revhatpp, .revhatpp2, .revhatppTT'); zazmm7.fadeOut(200);   $('body').removeClass('sccansell'); $(".menu-dbb1, #ad-bottom-f1ads, #ad-bottom-pc0").fadeIn(200); } });   });    $(document).on('click', '#errorpepe', function(){ $(".errorpepe22").hide().empty();revimim(); $(".gg789").fadeIn(200);});       $(document).on('click', '#errorpepebb', function(){$(".errorpepe22bb").hide().empty();const ggg=$("#reviewtapz-body2bb");ggg.removeClass("stoprevv");ggg.addClass("eratto22"); tomatozz(); $(".gg789bb").fadeIn(200);}); 
                 });
+
 
 
 

@@ -29,12 +29,14 @@ $.ajax(settings)
    const op=response.reviews;  const re7=JSON.stringify(response.reviews.length);
   
     if(re7==0){  ppp.append(errosm);pp2.hide();     }else{       
-  let fetchPromises = []; let popo53 = "";  let pop7gg = "";  
+  let fetchPromises = []; let popo53 = "";  let pop7gg = flem5+"/reviews";  
 for (let i = 0; i < re7; i++) {const tp=JSON.stringify(op[i].spoiler);
-  let u1 = "", u3 = "", u7 = "", u10 = "", u11 = "", u5 = "", u6 = "";
+  let u1 = "", u3 = "", u7 = "", u10 = "", u11 = "", u5 = "", u6 = "";let u1pp = "";
   if (tp.indexOf("true") >= 0) continue; 
- u5=op[i].author.displayName;u1=op[i].authorRating;u3=op[i].reviewTitle;u7=op[i].reviewText;
-                               
+ u5=op[i].author.displayName;u3=op[i].reviewTitle;u7=op[i].reviewText;
+         if (op[i].authorRating !== undefined) {
+u1=op[i].authorRating;} else { u1pp="dspp10";}
+
                                const gg=flem5+"/reviews";
  const bab0=u3.replace(/\?/g, ".").replace(/!/g, '.').replace(/[. ]/g, " ").replace(/\r?\n|\r/g, " ").replace(/\s+/g, " ").trim();
  const bab1=u7.replace(/\?/g, ".").replace(/!/g, '.').replace(/[. ]/g, " ").replace(/\r?\n|\r/g, " ").replace(/\s+/g, " ").trim();
@@ -52,7 +54,7 @@ for (let i = 0; i < re7; i++) {const tp=JSON.stringify(op[i].spoiler);
       u10 = translatedTitle;
       u11 = translatedBody;
   return `
-       <div class="twit-post099"><div class="imdb-rev-sc"><p class="imdb-rev-sc-pp"><p class="imdb-rev-sc-pp2"><a href="${gg}" target="_blank" rel="noopener noreferrer" id="twitop21" class="">${u5}</a><span class="imdb-rev-sc1bb"> <span class="imdb-rev-sc1bb22"><svg class="svg-star22zz svg-pos2" data-slot="icon" fill="#FFD700" height="10" width="10" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"></path></svg>                ${u1}              </span>/10</span></p><p class="imdb-rev-sc-pp3 transdef55"></p></p><div class="imdb-rev-sc1"><div class="imdb-rev-sc2"><a href="${gg}" target="_blank" rel="noopener noreferrer" id="twitop21" class="" style="font-size:14px !important;color:#67C090 !important;">${u10}</a><span id="secgen55aa" class="genben5bb"><span class="treggen9">原文を表示</span><span id="secgen55" class="genben5"> (${u3})</span></span></div><div class="imdb-rev-sc3"></div></div></div><div class="imdb-trans-0"><div class="imdb-trans-01">このレビューを翻訳する <svg class="sv-cas-85 svg-pos2" data-slot="icon" fill="none" height="15" width="15" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">  <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"></path></svg></div><div class="imdb-trans-02 transdef55-off"><div class="imdb-trans-02-in transdef55-off"></div><p class="imdb-trans-02bb">powered by Google 翻訳</p></div></div><div class="twit-post0-body transdef55-off"><div class="twit-post0-body-trere"><div class="transdef55-off">${u11}<div id="secgen55aa2" class="genben5bb"><p class="treggen9">原文を表示</p><div id="secgen552" class="genben5"><p id="retrans903">${u7}</p><p id="retrans90">再翻訳</p><p id="retrans902"><p class="imdb-trans-02bb">powered by Google 翻訳</p></p></div></div></div></div><br/><br/><p class="twit-post5">${u6}</p></div></div>`;
+       <div class="twit-post099"><div class="imdb-rev-sc"><p class="imdb-rev-sc-pp"><p class="imdb-rev-sc-pp2"><a href="${gg}" target="_blank" rel="noopener noreferrer" id="twitop21" class="">${u5}</a><span class="imdb-rev-sc1bb ${u1pp}"> <span class="imdb-rev-sc1bb22"><svg class="svg-star22zz svg-pos2" data-slot="icon" fill="#FFD700" height="10" width="10" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"></path></svg>                ${u1}              </span>/10</span></p><p class="imdb-rev-sc-pp3 transdef55"></p></p><div class="imdb-rev-sc1"><div class="imdb-rev-sc2"><a href="${gg}" target="_blank" rel="noopener noreferrer" id="twitop21" class="" style="font-size:14px !important;color:#67C090 !important;">${u10}</a><span id="secgen55aa" class="genben5bb"><span class="treggen9">原文を表示</span><span id="secgen55" class="genben5"> (${u3})</span></span></div><div class="imdb-rev-sc3"></div></div></div><div class="imdb-trans-0"><div class="imdb-trans-01">このレビューを翻訳する <svg class="sv-cas-85 svg-pos2" data-slot="icon" fill="none" height="15" width="15" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">  <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"></path></svg></div><div class="imdb-trans-02 transdef55-off"><div class="imdb-trans-02-in transdef55-off"></div><p class="imdb-trans-02bb">powered by Google 翻訳</p></div></div><div class="twit-post0-body transdef55-off"><div class="twit-post0-body-trere"><div class="transdef55-off">${u11}<div id="secgen55aa2" class="genben5bb"><p class="treggen9">原文を表示</p><div id="secgen552" class="genben5"><p id="retrans903">${u7}</p><p id="retrans90">再翻訳</p><p id="retrans902"><p class="imdb-trans-02bb">powered by Google 翻訳</p></p></div></div></div></div><br/><br/><p class="twit-post5">${u6}</p></div></div>`;
     })
     .catch((err) => {      console.error("翻訳エラー:", err);      return "";     });
   fetchPromises.push(p);}
@@ -140,8 +142,3 @@ $(document).on('click', '.imdbbox3, .review-itt02', function(e){   if (!$(e.targ
         tomatozz();        }); 
   $(function(){    $(document).on('click', '.delreeev, .sabu777ZZ, .sabu777obZZ, .revhatpp, .revhatppTT', function(e){    if (!$(e.target).closest('.revhatpp-body').length) {const zazmm7 = $('.delreeev, .sabu777ZZ, .sabu777obZZ, .revhatpp, .revhatpp2, .revhatppTT'); zazmm7.fadeOut(200);   $('body').removeClass('sccansell'); $(".menu-dbb1, #ad-bottom-f1ads, #ad-bottom-pc0").fadeIn(200); } });   });    $(document).on('click', '#errorpepe', function(){ $(".errorpepe22").hide().empty();revimim(); $(".gg789").fadeIn(200);});       $(document).on('click', '#errorpepebb', function(){$(".errorpepe22bb").hide().empty();const ggg=$("#reviewtapz-body2bb");ggg.removeClass("stoprevv");ggg.addClass("eratto22"); tomatozz(); $(".gg789bb").fadeIn(200);}); 
                 });
-
-
-
-
-

@@ -8,7 +8,66 @@
         },    error: function(data) {  $("#tomat-mm").append('<p class="nodott">No Data</p>');$(".gepomen").hide();$(".tomachik").addClass('gijisav');     }    }); };xtw77();$(document).on('click', '.nodott', function(){ xtw77(); });}); 
                 
      const errosm='<div id="errorpepe" class="errorpepe22">No Data<br />レビューを再取得してみる場合はここをクリック</div>';
-                 const imegg="<img class='gg789' loading='lazy' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiteO1hDCew_8rQ4im4yy_Qc96zDm08iSBLc1ecxyFUec9q2jcASyslOd6lh8JLpecgndclMgVVV5rr92s4yp3Vsg0uE97tbdcABpdJjhw7aDkj48TFcGlr9tFiPFnS9rmu7blP7s_0ks/s64-no/?authuser=0'/>";                 var revimim= function(){    let flem5="";       const ppp=$("#reviewtapz-body2");     const ppdd=$(".flex-yuz2, .logoonon1");  const pp2=$(".gg789, .rev-gg");flem5=$(".imdbRatingPlugin").parent().find("a").attr('href'); const bbm778="?text="+flem5+"/reviews";
+                 const imegg="<img class='gg789' loading='lazy' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiteO1hDCew_8rQ4im4yy_Qc96zDm08iSBLc1ecxyFUec9q2jcASyslOd6lh8JLpecgndclMgVVV5rr92s4yp3Vsg0uE97tbdcABpdJjhw7aDkj48TFcGlr9tFiPFnS9rmu7blP7s_0ks/s64-no/?authuser=0'/>";                 var revimim= function(){  
+                 
+            let flem5="";   let flem5im7="";    const ppp=$("#reviewtapz-body2");     const ppdd=$(".flex-yuz2, .logoonon1");  const pp2=$(".gg789, .rev-gg");flem5=$(".imdbRatingPlugin").parent().find("a").attr('href'); flem5im7=$(".imdbRatingPlugin").data('title');const bbm778="?text="+flem5+"/reviews";
+
+const settings = {
+	async: true,
+	crossDomain: true,
+	url: 'https://imdb8.p.rapidapi.com/title/get-user-reviews?tconst='+flem5im7,
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': '22eca568b9msh804a6ec15bb9372p1cd153jsn4e1656e041e2',
+		'x-rapidapi-host': 'imdb8.p.rapidapi.com'
+	},
+  dataType: 'json'
+};
+
+$.ajax(settings)
+  .then(function (response) {
+   const op=response.reviews;  const re7=JSON.stringify(response.reviews.length);
+  
+    if(re7==0){ }else{       
+  let fetchPromises = []; let popo53 = "";  let pop7gg = "";  
+for (let i = 0; i < re7; i++) {const tp=JSON.stringify(op[i].spoiler);
+  let u1 = "", u3 = "", u7 = "", u10 = "", u11 = "", u5 = "", u6 = "";let gg="";
+  if (tp.indexOf("true") >= 0) continue; 
+ u5=op[i].author.displayName;u1=op[i].authorRating;u3=op[i].reviewTitle;u7=op[i].reviewText;
+                               
+                               
+ const bab0=u3.replace(/\?/g, ".").replace(/!/g, '.').replace(/[. ]/g, " ").replace(/\r?\n|\r/g, " ").replace(/\s+/g, " ").trim();
+ const bab1=u7.replace(/\?/g, ".").replace(/!/g, '.').replace(/[. ]/g, " ").replace(/\r?\n|\r/g, " ").replace(/\s+/g, " ").trim();
+ const url1zz =
+    "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ja&dt=t&q=" +
+    encodeURIComponent(bab0);
+  const url2zz =
+    "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ja&dt=t&q=" +
+    encodeURIComponent(bab1);
+ const p = Promise.all([
+    fetch(url1zz).then((r) => r.json()).then((d) => d[0][0][0]),
+    fetch(url2zz).then((r) => r.json()).then((d) => d[0][0][0]),
+  ])
+    .then(([translatedTitle, translatedBody]) => {
+      u10 = translatedTitle;
+      u11 = translatedBody;
+  return `
+       <div class="twit-post099"><div class="imdb-rev-sc"><p class="imdb-rev-sc-pp"><p class="imdb-rev-sc-pp2"><a href="${gg}" target="_blank" rel="noopener noreferrer" id="twitop21" class="">${u5}</a><span class="imdb-rev-sc1bb"> <span class="imdb-rev-sc1bb22"><svg class="svg-star22zz svg-pos2" data-slot="icon" fill="#FFD700" height="10" width="10" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"></path></svg>                ${u1}              </span>/10</span></p><p class="imdb-rev-sc-pp3 transdef55"></p></p><div class="imdb-rev-sc1"><div class="imdb-rev-sc2"><a href="${gg}" target="_blank" rel="noopener noreferrer" id="twitop21" class="" style="font-size:14px !important;color:#67C090 !important;">${u10}</a><span id="secgen55aa" class="genben5bb"><span class="treggen9">原文を表示</span><span id="secgen55" class="genben5"> (${u3})</span></span></div><div class="imdb-rev-sc3"></div></div></div><div class="imdb-trans-0"><div class="imdb-trans-01">このレビューを翻訳する <svg class="sv-cas-85 svg-pos2" data-slot="icon" fill="none" height="15" width="15" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">  <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"></path></svg></div><div class="imdb-trans-02 transdef55-off"><div class="imdb-trans-02-in transdef55-off"></div><p class="imdb-trans-02bb">powered by Google 翻訳</p></div></div><div class="twit-post0-body transdef55-off"><div class="twit-post0-body-trere"><div class="transdef55-off">${u11}<div id="secgen55aa2" class="genben5bb"><p class="treggen9">原文を表示</p><div id="secgen552" class="genben5"><p id="retrans903">${u7}</p><p id="retrans90">再翻訳</p><p id="retrans902"><p class="imdb-trans-02bb">powered by Google 翻訳</p></p></div></div></div></div><br/><br/><p class="twit-post5">${u6}</p></div></div>`;
+    })
+    .catch((err) => {      console.error("翻訳エラー:", err);      return "";     });
+  fetchPromises.push(p);}
+Promise.all(fetchPromises).then((htmlBlocks) => {
+  popo53 += htmlBlocks.join("");ppp.append("<div class='reveve89'>"+popo53+"</div>");$(".logoonon2").append('<a href="'+pop7gg+'" target="_blank" rel="noopener noreferrer">'+pop7gg+'</a>'); ppdd.fadeIn(200);pp2.hide(); $(".errorpepe22").hide();
+});      }
+      
+ })
+  .catch(function (error) {
+   ppp.append(errosm);pp2.hide();    
+  
+  });
+$(document).on('click', '.treggen9', function () {$(this).toggle();$(this).parent().find(".genben5").show(200); });   $('.alpoc65a').click(function() { $('.reveve89').animate({ scrollLeft: '-=200' }, 300);});$('.alpoc65b').click(function() {  $('.reveve89').animate({ scrollLeft: '+=200' }, 300); });
+
+             /*    let flem5="";       const ppp=$("#reviewtapz-body2");     const ppdd=$(".flex-yuz2, .logoonon1");  const pp2=$(".gg789, .rev-gg");flem5=$(".imdbRatingPlugin").parent().find("a").attr('href'); const bbm778="?text="+flem5+"/reviews";
                   function _0x1dd1(){const _0x1da904=['9XBOGoY','5968355ZHLCQH','15616630yFykLq','99506fSbTbV','2067822nRvILD','https://script.google.com/macros/s/AKfycbxyKCBTvarMr5zGRDFvlycM-AjSjuiLYx2yW4tozG8yp74Id7QiExL8rBxmz0i7rPiX/exec','1910732sOxUKk','191758UUWPrF','36okyICU','8272104PiTXVq','9QTNEZT'];_0x1dd1=function(){return _0x1da904;};return _0x1dd1();}const _0x3c027d=_0x1f68;(function(_0x52993b,_0x3b4216){const _0x3df9b5=_0x1f68,_0x4ef009=_0x52993b();while(!![]){try{const _0x3ae96f=parseInt(_0x3df9b5(0x1b3))/0x1*(parseInt(_0x3df9b5(0x1b6))/0x2)+parseInt(_0x3df9b5(0x1b7))/0x3+parseInt(_0x3df9b5(0x1b9))/0x4+-parseInt(_0x3df9b5(0x1b4))/0x5+-parseInt(_0x3df9b5(0x1b0))/0x6*(parseInt(_0x3df9b5(0x1ba))/0x7)+-parseInt(_0x3df9b5(0x1b1))/0x8*(parseInt(_0x3df9b5(0x1b2))/0x9)+parseInt(_0x3df9b5(0x1b5))/0xa;if(_0x3ae96f===_0x3b4216)break;else _0x4ef009['push'](_0x4ef009['shift']());}catch(_0x1d8e62){_0x4ef009['push'](_0x4ef009['shift']());}}}(_0x1dd1,0xbf7dd));function _0x1f68(_0x3aad5e,_0xb02282){const _0x1dd154=_0x1dd1();return _0x1f68=function(_0x1f68f7,_0x21c88f){_0x1f68f7=_0x1f68f7-0x1b0;let _0x3275e4=_0x1dd154[_0x1f68f7];return _0x3275e4;},_0x1f68(_0x3aad5e,_0xb02282);}const gas778=_0x3c027d(0x1b8)+bbm778;
    $.ajax({        type: 'GET',        url: gas778,        dataType: 'jsonp',        data: 'json',
         success: out => {const ma=JSON.stringify(out).replace(/\\n/g,"").replace(/\\/g,"");                     
@@ -42,7 +101,7 @@ Promise.all(fetchPromises).then((htmlBlocks) => {
   popo53 += htmlBlocks.join("");ppp.append("<div class='reveve89'>"+popo53+"</div>");$(".logoonon2").append('<a href="'+pop7gg+'" target="_blank" rel="noopener noreferrer">'+pop7gg+'</a>');ppdd.fadeIn(200);pp2.hide(); $(".errorpepe22").hide();
 });      }  },
     error: function(data) {ppp.append(errosm);pp2.hide();     }
-    }); $(document).on('click', '.treggen9', function () {$(this).toggle();$(this).parent().find(".genben5").show(200); });   $('.alpoc65a').click(function() { $('.reveve89').animate({ scrollLeft: '-=200' }, 300);});$('.alpoc65b').click(function() {  $('.reveve89').animate({ scrollLeft: '+=200' }, 300); }); };  
+    }); $(document).on('click', '.treggen9', function () {$(this).toggle();$(this).parent().find(".genben5").show(200); });   $('.alpoc65a').click(function() { $('.reveve89').animate({ scrollLeft: '-=200' }, 300);});$('.alpoc65b').click(function() {  $('.reveve89').animate({ scrollLeft: '+=200' }, 300); });*/ };  
                  
 let hun55zz="";   var tomatozz= function(){     const errosm2='<div id="errorpepebb" class="errorpepe22bb">No Data<br />レビューを再取得してみる場合はここをクリック</div>';   const ppp=$("#reviewtapz-body2bb"); const jasp=ppp.attr('class');  if (jasp.indexOf("stoprevv") >= 0){ }else if (jasp.indexOf("eratto22") >= 0 || jasp.indexOf("review")){const ppp2=$("#reviewtapz-body2bb2");   const ppdd=$(".flex-yuz2bb, .logoonon1bb");  const pp2=$(".gg789bb, .rev-ggbb"); const hulele=hun55zz.length; if(10>hulele){     const hun55b=$('.tmtt-ptt').data("tent");const hun255=hun55b.length;      if(hun255>1){hun55zz=hun55b;}else{$(".tomachik").addClass('gijisav');}   }ppp.addClass("stoprevv");ppp.removeClass("eratto22");const cri=$('#reviewtapz-body2bb');const audd=$('#reviewtapz-body2bb2');
             const gas778="https://script.google.com/macros/s/AKfycbz_TUAiUL5DjCNtWRYhARLOVZJflkNWIvRdbV7nJBev6H5qYhSXylxUlxOJHlA8zhHvfw/exec?text="+hun55zz;
@@ -81,6 +140,7 @@ $(document).on('click', '.imdbbox3, .review-itt02', function(e){   if (!$(e.targ
         tomatozz();        }); 
   $(function(){    $(document).on('click', '.delreeev, .sabu777ZZ, .sabu777obZZ, .revhatpp, .revhatppTT', function(e){    if (!$(e.target).closest('.revhatpp-body').length) {const zazmm7 = $('.delreeev, .sabu777ZZ, .sabu777obZZ, .revhatpp, .revhatpp2, .revhatppTT'); zazmm7.fadeOut(200);   $('body').removeClass('sccansell'); $(".menu-dbb1, #ad-bottom-f1ads, #ad-bottom-pc0").fadeIn(200); } });   });    $(document).on('click', '#errorpepe', function(){ $(".errorpepe22").hide().empty();revimim(); $(".gg789").fadeIn(200);});       $(document).on('click', '#errorpepebb', function(){$(".errorpepe22bb").hide().empty();const ggg=$("#reviewtapz-body2bb");ggg.removeClass("stoprevv");ggg.addClass("eratto22"); tomatozz(); $(".gg789bb").fadeIn(200);}); 
                 });
+
 
 
 

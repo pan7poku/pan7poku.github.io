@@ -10,7 +10,7 @@
      const errosm='<div id="errorpepe" class="errorpepe22">No Data<br />レビューを再取得してみる場合はここをクリック</div>';
                  const imegg="<img class='gg789' loading='lazy' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiteO1hDCew_8rQ4im4yy_Qc96zDm08iSBLc1ecxyFUec9q2jcASyslOd6lh8JLpecgndclMgVVV5rr92s4yp3Vsg0uE97tbdcABpdJjhw7aDkj48TFcGlr9tFiPFnS9rmu7blP7s_0ks/s64-no/?authuser=0'/>";                 var revimim= function(){  
                  
-            let flem5="";   let flem5im7="";    const ppp=$("#reviewtapz-body2");     const ppdd=$(".flex-yuz2, .logoonon1");  const pp2=$(".gg789, .rev-gg");flem5=$(".imdbRatingPlugin").parent().find("a").attr('href'); flem5im7=$(".imdbRatingPlugin").data('title');const bbm778="?text="+flem5+"/reviews";
+            let flem5="";   let flem5im7="";    const ppp=$("#reviewtapz-body2");     const ppdd=$(".flex-yuz2, .logoonon1");  const pp2=$(".gg789, .rev-gg");flem5=$(".imdbRatingPlugin").parent().find("a").attr('href'); flem5im7=$(".imdbRatingPlugin").first().data('title');const bbm778="?text="+flem5+"/reviews";
 
 const settings = {
 	async: true,

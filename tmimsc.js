@@ -100,7 +100,7 @@ else{   const p2 = Promise.all([    fetch(url2).then((r) => r.json()).then((d) =
   fetchPromises2.push(p2);}}
 Promise.all(fetchPromises).then((htmlBlocks) => {  popo53 += htmlBlocks.join("");tscrvv.find("#reviewtapz-body2bb").append("<section class='reveve895'>"+popo53+"</section>");tscrvv.fadeIn(200);ppdd.fadeIn(200);pp2.hide(); $(".errorpepe22bb").hide();});                         
 Promise.all(fetchPromises2).then((htmlBlocks2) => {  popo53bb += htmlBlocks2.join("");tscrvv.find("#reviewtapz-body2bb2").append("<div class='reveve895zz'>"+popo53bb+"</section>");tscrvv.fadeIn(200);ppdd.fadeIn(200);pp2.hide(); $(".errorpepe22bb").hide();});                         
-/* setTimeout(function() {$(".logoonon2bb").append('<a href="'+pop7gg+'" target="_blank" rel="noopener noreferrer">'+pop7gg+'</a>');}, 2000);       setTimeout(function() {  pp2.hide(); $(".errorpepe22bb").hide();}, 12000);  */ ontput();  }  
+/* setTimeout(function() {$(".logoonon2bb").append('<a href="'+pop7gg+'" target="_blank" rel="noopener noreferrer">'+pop7gg+'</a>');}, 2000);       setTimeout(function() {  pp2.hide(); $(".errorpepe22bb").hide();}, 12000);  */ setTimeout(ontput, 300);  }  
    })
   .catch(err => {
     tscrvv.append(errosm2);tscrvv.fadeIn(200); pp2.hide();    });

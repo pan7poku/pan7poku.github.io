@@ -99,34 +99,13 @@ else{   const p2 = Promise.all([    fetch(url2).then((r) => r.json()).then((d) =
     })    .catch((err) => {      console.error("翻訳エラー:", err);      return "";     });
   fetchPromises2.push(p2);}}
 Promise.all([Promise.all(fetchPromises), Promise.all(fetchPromises2)])
-  .then(([htmlBlocks1, htmlBlocks2]) => {
-      // criticsレビューを挿入
-      popo53 += htmlBlocks1.join("");
-      tscrvv.find("#reviewtapz-body2bb").append("<section class='reveve895'>" + popo53 + "</section>");
-      
-      // audienceレビューを挿入
-      popo53bb += htmlBlocks2.join("");
-      tscrvv.find("#reviewtapz-body2bb2").append("<div class='reveve895zz'>" + popo53bb + "</div>");
-      
-      // 共通処理
-      tscrvv.fadeIn(200);
-      ppdd.fadeIn(200);
-      pp2.hide();
-      $(".errorpepe22bb").hide();
-
-      // fetch 完了後に ontput を呼ぶ
-      if (typeof ontput === "function") ontput();
-  })
-  .catch(err => {
-    
-  });
-
-  
-  
+  .then(([htmlBlocks1, htmlBlocks2]) => {      popo53 += htmlBlocks1.join("");      tscrvv.find("#reviewtapz-body2bb").append("<section class='reveve895'>" + popo53 + "</section>");
+      popo53bb += htmlBlocks2.join("");      tscrvv.find("#reviewtapz-body2bb2").append("<div class='reveve895zz'>" + popo53bb + "</div>");
+  tscrvv.fadeIn(200);      ppdd.fadeIn(200);      pp2.hide();      $(".errorpepe22bb").hide();
+      if (typeof ontput === "function") ontput();  })  .catch(err => {ontput();});
 /* setTimeout(function() {$(".logoonon2bb").append('<a href="'+pop7gg+'" target="_blank" rel="noopener noreferrer">'+pop7gg+'</a>');}, 2000);       setTimeout(function() {  pp2.hide(); $(".errorpepe22bb").hide();}, 12000);  */ 
               }  
-   })
-  .catch(err => {
+   })  .catch(err => {
     tscrvv.append(errosm2);tscrvv.fadeIn(200); pp2.hide();    });
  $(document).on('click', '.treggen9', function () {$(this).toggle();$(this).parent().find(".genben5").show(200); });   $('.alpoc65a5').click(function() { $('.reveve895').animate({ scrollLeft: '-=200' }, 300);});$('.alpoc65b5').click(function() {  $('.reveve895').animate({ scrollLeft: '+=200' }, 300); }); $('.alpoc65a52').click(function() { $('.reveve895zz').animate({ scrollLeft: '-=200' }, 300);});$('.alpoc65b52').click(function() {  $('.reveve895zz').animate({ scrollLeft: '+=200' }, 300); }); } };
 $(document).on('click', '.imdbbox3, .review-itt02', function(e){   if (!$(e.target).closest('.imdbbox3 a').length) {
@@ -141,6 +120,3 @@ $(document).on('click', '.imdbbox3, .review-itt02', function(e){   if (!$(e.targ
         tomatozz();        }); 
   $(function(){    $(document).on('click', '.delreeev, .sabu777ZZ, .sabu777obZZ, .revhatpp, .revhatppTT', function(e){    if (!$(e.target).closest('.revhatpp-body').length) {const zazmm7 = $('.delreeev, .sabu777ZZ, .sabu777obZZ, .revhatpp, .revhatpp2, .revhatppTT'); zazmm7.fadeOut(200);   $('body').removeClass('sccansell'); $(".menu-dbb1, #ad-bottom-f1ads, #ad-bottom-pc0").fadeIn(200); } });   });    $(document).on('click', '#errorpepe', function(){ $(".errorpepe22").hide().empty();revimim(); $(".gg789").fadeIn(200);});       $(document).on('click', '#errorpepebb', function(){$(".errorpepe22bb").hide().empty();const ggg=$("#reviewtapz-body2bb");ggg.removeClass("stoprevv");ggg.addClass("eratto22"); tomatozz(); $(".gg789bb").fadeIn(200);}); 
                 });        
-
-
-

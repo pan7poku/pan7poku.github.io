@@ -58,7 +58,7 @@ $(document).on('click', '.treggen9', function () {$(this).toggle();$(this).paren
                  
 let hun55zz="";   var tomatozz= function(){  let ontput=""; const errosm2='<div id="errorpepebb" class="errorpepe22bb">No Data<br />レビューを再取得してみる場合はここをクリック</div>';   const ppp=$("#reviewtapz-body2bb"); const jasp=ppp.attr('class');  if (jasp.indexOf("stoprevv") >= 0){ }else if (jasp.indexOf("eratto22") >= 0 || jasp.indexOf("review")){const ppp2=$("#reviewtapz-body2bb2");   const ppdd=$(".flex-yuz2bb, .logoonon1bb");  const pp2=$(".gg789bb, .rev-ggbb"); const hulele=hun55zz.length; if(10>hulele){     const hun55b=$('.tmtt-ptt').data("tent");const hun255=hun55b.length;      if(hun255>1){hun55zz=hun55b;}else{$(".tomachik").addClass('gijisav');}   }ppp.addClass("stoprevv");ppp.removeClass("eratto22");const cri=$('#reviewtapz-body2bb');const audd=$('#reviewtapz-body2bb2');
 const tscid=$("#tomscore-00");const tscrvv=$("#tom-rev-00");tscid.empty();
-  const gg = hun55zz;  
+  const gg = hun55zz;  const cttt=hun55zz.length; if (cttt<15){tscrvv.append('<div id="errorpepebb" class="errorpepe22bb">No Data</div>');return;}
             const api="https://script.google.com/macros/s/AKfycbwhhXuiEsvD3CQkGAs00l4JB6pQBKAl63-Hm-lb-tbmML9mI1dqWQXhdZjuqjtqP6vsPQ/exec?text=";
       fetch(api + encodeURIComponent(hun55zz), {
     mode: "cors"  })

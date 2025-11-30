@@ -79,7 +79,7 @@ const tscid=$("#tomscore-00");const tscrvv=$("#tom-rev-00");tscid.empty();
               
  if (reved.indexOf("critics") >= 0){cri.show();}else{cri.hide();} if (reved.indexOf("audience") >= 0){audd.show();}else{audd.hide();}     const sh2tm = reved.split('deprecated slot');                        const target55 = 'createDate' ;const count5 = ( reved.match( new RegExp( target55, "g" ) ) || [] ).length;  if(count5==0){ tscrvv.append(errosm2);tscrvv.fadeIn(200);pp2.hide();    }else{
        
- let fetchPromises = [];  let fetchPromises2 = []; let popo53 = ""; let popo53bb = ""; let pop7gg = "";  
+ let fetchPromises = [];  let fetchPromises2 = []; let popo53aa = ""; let popo53bb = ""; let pop7gg = "";  
 for (let i = 1; i < count5; i++) {  let u1 = "", u3 = "", u7 = "", u3b = "", u7b = "", u10 = "", u11 = "", u5 = "", u6 = "";let raiting="";
  if (sh2tm[i].indexOf("critics") >= 0){   const bb1b = sh2tm[i].split('grayDark3');  const bb22b = bb1b[1].split('>');  const bb22bT = bb22b[1].split('<');  u3 = bb22bT[0];
 const bb1d = sh2tm[i].split('review-text');  const bb22d = bb1d[1].split('>');  const bb22dT = bb22d[1].split('<');  u7 = bb22dT[0];if (sh2tm[i].indexOf("Rated") >= 0){ const bb1uu = sh2tm[i].split('Rated: ');  const bb22uu = bb1uu[1].split('/'); const bb22uu22 = bb22uu[1].split('<'); raiting='<span class="imdb-rev-sc1bb"> <span class="imdb-rev-sc1bb22"> <svg class="svg-star22zz svg-pos2" data-slot="icon" fill="#FFD700" height="10" width="10" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"></path></svg>'+bb22uu[0]+'/'+bb22uu22[0]+'</span></span>';}}else{
@@ -100,7 +100,7 @@ else{   const p2 = Promise.all([    fetch(url2).then((r) => r.json()).then((d) =
     })    .catch((err) => {      console.error("翻訳エラー:", err);      return "";     });
   fetchPromises2.push(p2);}}
 Promise.all([Promise.all(fetchPromises), Promise.all(fetchPromises2)])
-  .then(([htmlBlocks1, htmlBlocks2]) => {      popo53 += htmlBlocks1.join("");      tscrvv.find("#reviewtapz-body2bb").append("<section class='reveve895'>" + popo53 + "</section>");
+  .then(([htmlBlocks1, htmlBlocks2]) => {      popo53aa += htmlBlocks1.join("");      tscrvv.find("#reviewtapz-body2bb").append("<section class='reveve895'>" + popo53aa + "</section>");
       popo53bb += htmlBlocks2.join("");      tscrvv.find("#reviewtapz-body2bb2").append("<div class='reveve895zz'>" + popo53bb + "</div>");
   tscrvv.fadeIn(200);      ppdd.fadeIn(200);      pp2.hide();      $(".errorpepe22bb").hide();
       if (typeof ontput === "function") ontput();  })  .catch(err => {ontput();});

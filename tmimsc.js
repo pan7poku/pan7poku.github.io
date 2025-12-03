@@ -28,18 +28,27 @@ for (let i = 0; i < re7; i++) {let tp="";
  u5=op[i].node.author.nickName;u3=op[i].node.summary.originalText;u7=op[i].node.text.originalText.plainText;u1=op[i].node.authorRating;  /* imdbp and imdb232*/}             
          if (u1 == undefined || u1 == null) { u1pp="dspp10";}
                                const gg=flem5+"/reviews";
- const bab0=u3.replace(/\?/g, ".").replace(/!/g, '.').replace(/[. ]/g, " ").replace(/\r?\n|\r/g, " ").replace(/\s+/g, " ").trim();
- const bab1=u7.replace(/\?/g, ".").replace(/!/g, '.').replace(/[. ]/g, " ").replace(/\r?\n|\r/g, " ").replace(/\s+/g, " ").trim();
+ const bab0=u3.replace(/\?/g, ".").replace(/!/g, '.').replace(/\r?\n|\r/g, " ").replace(/\s+/g, " ").trim();
+ const bab1=u7.replace(/\?/g, ".").replace(/!/g, '.').replace(/\r?\n|\r/g, " ").replace(/\s+/g, " ").trim();
  const url1zz =
     "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ja&dt=t&q=" +
     encodeURIComponent(bab0);
   const url2zz =
     "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ja&dt=t&q=" +
     encodeURIComponent(bab1);
- const p = Promise.all([
-    fetch(url1zz).then((r) => r.json()).then((d) => d[0][0][0]),
-    fetch(url2zz).then((r) => r.json()).then((d) => d[0][0][0]),
-  ])
+              
+  function extractTranslatedText(d) {
+  return d[0].map(part => part[0]).join("");
+}
+  
+const p = Promise.all([
+  fetch(url1zz)
+    .then((r) => r.json())
+    .then((d) => extractTranslatedText(d)),
+  fetch(url2zz)
+    .then((r) => r.json())
+    .then((d) => extractTranslatedText(d)),
+])
     .then(([translatedTitle, translatedBody]) => {
       u10 = translatedTitle;
       u11 = translatedBody;
@@ -121,4 +130,5 @@ $(document).on('click', '.imdbbox3, .review-itt02', function(e){   if (!$(e.targ
         tomatozz();        }); 
   $(function(){    $(document).on('click', '.delreeev, .sabu777ZZ, .sabu777obZZ, .revhatpp, .revhatppTT', function(e){    if (!$(e.target).closest('.revhatpp-body').length) {const zazmm7 = $('.delreeev, .sabu777ZZ, .sabu777obZZ, .revhatpp, .revhatpp2, .revhatppTT'); zazmm7.fadeOut(200);   $('body').removeClass('sccansell'); $(".menu-dbb1, #ad-bottom-f1ads, #ad-bottom-pc0").fadeIn(200); } });   });    $(document).on('click', '#errorpepe', function(){ $(".errorpepe22").hide().empty();revimim(); $(".gg789").fadeIn(200);});       $(document).on('click', '#errorpepebb', function(){$(".errorpepe22bb").hide().empty();const ggg=$("#reviewtapz-body2bb");ggg.removeClass("stoprevv");ggg.addClass("eratto22"); tomatozz(); $(".gg789bb").fadeIn(200);}); 
                 });    
+
 

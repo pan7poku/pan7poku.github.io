@@ -10,7 +10,7 @@ $(function(){  const tebe=$("#tomat-mm, #tomat-mm-npp");  $(document).one('click
      const errosm='<div id="errorpepe" class="errorpepe22">No Data<br />レビューを再取得してみる場合はここをクリック</div>';
                  const imegg="<img class='gg789' loading='lazy' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiteO1hDCew_8rQ4im4yy_Qc96zDm08iSBLc1ecxyFUec9q2jcASyslOd6lh8JLpecgndclMgVVV5rr92s4yp3Vsg0uE97tbdcABpdJjhw7aDkj48TFcGlr9tFiPFnS9rmu7blP7s_0ks/s64-no/?authuser=0'/>";                 var revimim= function(){                   
             let flem5="";   let flem5im7="";    const ppp=$("#reviewtapz-body2");     const ppdd=$(".flex-yuz2, .logoonon1");  const pp2=$(".gg789, .rev-gg");flem5=$(".imdbRatingPlugin").parent().find("a").attr('href'); flem5im7=$(".imdbRatingPlugin").first().data('title');const bbm778="?text="+flem5+"/reviews";
-  let cko = "555";
+  let cko = "222";
   const gasUrl = "https://script.google.com/macros/s/AKfycbyWOFqa70wp81hZNZdHIGkTEHxsuavAE_eQY8xuHWMrmcGA7ykD4gBuCGn6IotAtZj7/exec";
   const url = `${gasUrl}?tt=${encodeURIComponent(flem5im7)}&type=${cko}`;
   fetch(url)
@@ -121,3 +121,4 @@ $(document).on('click', '.imdbbox3, .review-itt02', function(e){   if (!$(e.targ
         tomatozz();        }); 
   $(function(){    $(document).on('click', '.delreeev, .sabu777ZZ, .sabu777obZZ, .revhatpp, .revhatppTT', function(e){    if (!$(e.target).closest('.revhatpp-body').length) {const zazmm7 = $('.delreeev, .sabu777ZZ, .sabu777obZZ, .revhatpp, .revhatpp2, .revhatppTT'); zazmm7.fadeOut(200);   $('body').removeClass('sccansell'); $(".menu-dbb1, #ad-bottom-f1ads, #ad-bottom-pc0").fadeIn(200); } });   });    $(document).on('click', '#errorpepe', function(){ $(".errorpepe22").hide().empty();revimim(); $(".gg789").fadeIn(200);});       $(document).on('click', '#errorpepebb', function(){$(".errorpepe22bb").hide().empty();const ggg=$("#reviewtapz-body2bb");ggg.removeClass("stoprevv");ggg.addClass("eratto22"); tomatozz(); $(".gg789bb").fadeIn(200);}); 
                 });    
+

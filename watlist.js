@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'watchlist';
+var STORAGE_KEY = 'watchlist';
 
   function updateWatchCount(){ const list = JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; const el = document.getElementById('watch-count'); if(el) el.textContent = list.length; } updateWatchCount();
   
@@ -45,4 +45,5 @@ $(".addwat")
   .delay(1500)
   .fadeOut(800);
   }
+
 }); 

@@ -1,4 +1,4 @@
-  var STORAGE_KEY = 'watchlist';
+var STORAGE_KEY = 'watchlist';
 
   function safeParse(key){
   try {
@@ -25,7 +25,7 @@ function saveWatchlist(list){
   updateWatchCount();
 }
 
-document.addEventListener('click', async e => { updateWatchCount();
+document.addEventListener('click', async e => { 
   const btn = e.target.closest('.watch-remove-btn');
   if (!btn) return;
 
@@ -57,4 +57,4 @@ $(".addwat")
   .delay(1500)
   .fadeOut(800);
   }
-}); 
+});

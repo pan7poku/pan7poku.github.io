@@ -1,0 +1,23 @@
+{
+  "name": "Get Freax",
+  "short_name": "FRX",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1a0f1f",
+"theme_color": "#2a1035",
+  "description": "Get Freax公式サイト",
+  "icons": [
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIkXWM5FfySK_S186MVMW3XI40gGWAMXeIPywnCDNQck4TRwYasb8K5MIQ5u6xgYzKF03SkhvuD-7AaVKFUGVuzKx6KErXQFIhCiFORtOZTV1J2YuWEJzqlO76RpuXstIsI8U5YkCVFs85674BWLvVAlA_i0d5dHkGLus_IH-kuW2Xa9oUvT1zb7xHvzg/s1600-rw-e30/g192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsa3oAo5gsHIs-5cSumWyx015rIUC1halQNAv4tpkrfpeFs4R46NramBnaD0TC5AtUGynikeTF5qEZzNLmnWalGEcvIgItHPX6iM6r16LMwm5QJJ96Uq41N-42QhHm0H3hsWM_KHeYR94MOsE4KCHBLhyphenhyphenw6wziJ-Hz_TFzjwuO-ey667naIdCcGFC930k/s1600-rw-e30/g512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

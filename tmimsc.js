@@ -21,9 +21,10 @@
      const errosm='<div id="errorpepe" class="errorpepe22">No Data<br />レビューを再取得してみる場合はここをクリック</div>';
                  const imegg="<img class='gg789' loading='lazy' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiteO1hDCew_8rQ4im4yy_Qc96zDm08iSBLc1ecxyFUec9q2jcASyslOd6lh8JLpecgndclMgVVV5rr92s4yp3Vsg0uE97tbdcABpdJjhw7aDkj48TFcGlr9tFiPFnS9rmu7blP7s_0ks/s64-no/?authuser=0'/>";                 var revimim= function(){                   
             let flem5="";   let flem5im7="";    const ppp=$("#reviewtapz-body2");     const ppdd=$(".flex-yuz2, .logoonon1");  const pp2=$(".gg789, .rev-gg");flem5=$(".imdbRatingPlugin").parent().find("a").attr('href'); flem5im7=$(".imdbRatingPlugin").first().data('title');const bbm778="?text="+flem5+"/reviews";
-  let cko = "333";
-  const gasUrl = "https://script.google.com/macros/s/AKfycbyWOFqa70wp81hZNZdHIGkTEHxsuavAE_eQY8xuHWMrmcGA7ykD4gBuCGn6IotAtZj7/exec";
-  const url = `${gasUrl}?tt=${encodeURIComponent(flem5im7)}&type=${cko}`;
+  let cko = "222";
+  const gasUrl = "https://get-imdb.getfreax.workers.dev/";
+const url = `${gasUrl}?tt=${encodeURIComponent(flem5im7)}&type=${cko}`;  
+
   fetch(url)
     .then(out => out.json())
     .then(response => {let op="";let re7="";
